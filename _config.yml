@@ -1,5 +1,10 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+name: Alpaca Beam
+description: My personal blog of tech and stuff 
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+
+exclude:
+  - vendor
