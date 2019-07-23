@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-name: Bandal
-description: Test Blog
-=======
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -37,7 +33,6 @@ disqus:
     shortname: sergodeeva
 
 # Build settings
->>>>>>> replace...
 markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
@@ -45,10 +40,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-<<<<<<< HEAD
-exclude:
-  - vendor
-=======
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -60,4 +51,3 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
->>>>>>> replace...
