@@ -175,7 +175,7 @@ ul.fa-ul {
 
 ul.fa-ul li {
 	list-style-type: none;
-	float: left;
+    display: inline-block;
 }
 
 ul.fa-ul li a i {
