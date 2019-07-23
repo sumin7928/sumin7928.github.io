@@ -1,5 +1,5 @@
-name: 반달 블로그
-description: 테스트로 일단 만듦
+name: test
+description: test project
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-cayman
