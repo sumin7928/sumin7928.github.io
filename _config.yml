@@ -13,32 +13,30 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Natalya Kosenko's Blog
-author: Natalya Kosenko
-email: sergodeeva@gmail.com
+title: Bandal's Blog
+author: Bandal
+email: sumin7928@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  From Manager to Developer
+  Back-End Server Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://www.natalyakosenko.com
+# url:
 # twitter_username: jekyllrb
-github_username:  sergodeeva
-facebook_username:  natalya.kosenko
-linkedin_username:  natalyakosenko
-repository: sergodeeva/sergodeeva.github.io
+github_username:  sumin7928
+facebook_username:  #sumin7928
+linkedin_username:  #sumin7928
+repository: sumin7928/sumin7928.github.io
 permalink: /:year-:month-:day-:title
-google_analytics: UA-37473492-7
+google_analytics:
 logo: "http://www.natalyakosenko.com/assets/logo.png"
 
-disqus:
-    shortname: sergodeeva
+#disqus:
+#    shortname: sumin7928
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
