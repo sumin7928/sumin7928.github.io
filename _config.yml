@@ -22,15 +22,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # url:
 # twitter_username: jekyllrb
 github_username:  sumin7928
-facebook_username:  #sumin7928
-linkedin_username:  #sumin7928
+facebook_username:  sumin7928
+linkedin_username:  sumin7928
 repository: sumin7928/sumin7928.github.io
 permalink: /:year-:month-:day-:title
 google_analytics:
 logo: "http://www.natalyakosenko.com/assets/logo.png"
 
-#disqus:
-#    shortname: sumin7928
+disqus:
+    shortname: sumin7928
 
 # Build settings
 markdown: kramdown
