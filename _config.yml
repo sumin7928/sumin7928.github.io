@@ -29,6 +29,9 @@ permalink: /:year-:month-:day-:title
 google_analytics: UA-144380036-1
 logo: "http://www.natalyakosenko.com/assets/logo.png"
 
+disqus:
+    shortname: sumin7928
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
