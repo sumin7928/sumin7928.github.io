@@ -1,10 +1,10 @@
 ---
 
   layout: post
-  title: CentOS7 에서 윈도우서버 원격 실행 하기
+  title: CentOS7 에서 winexe 설치 과정 히스토리
   date: 2018-07-24 16:00:00 +0900
   tags: centos windows
-  description: winexe를 이용해서 원도우 서버의 스크립트 실행 
+  description: 시간 흐름에 따른 이슈 중심으로 히스토리를 만들어 보았다. 
 
 ---
 
@@ -24,6 +24,10 @@ psexec.exe 사용을 위해서는 리눅스에서 winexe를 사용해야 하고 
 https://sourceforge.net/p/winexe/winexe-waf/ci/master/tree/
 
 ## 설치
+
+설치는 참고 사이트를 통해서 진행하였으며 따라서 관련 설치 패키지도 공식 문서와는 조금 다르다. 
+> https://www.kickass.se/?p=189 
+
 
 1. winexe 소스 가져옴
 해당 사이트에서 제공되는 파일을 다운받던지 `git clone http://git.code.sf.net/p/winexe/winexe-waf winexe` 를 이용해서 전체 소스를 가져오면 된다.
@@ -105,6 +109,9 @@ Cannot continue! Please either install Samba shared libraries and re-run waf, or
 슬슬 맨붕이 오고 있을때쯤 좀더 찾아보니 Samba 버전에 대한 이슈였고 해당 이슈에 대해서는 누군가가 winexe를 fork해서 수정한 소스를 올린게 있어서
 얼른 받고 다시 빌드를 해보았다.
 
+> https://sourceforge.net/u/mstowe/winexe/ci/v0.2/tree/
+
+
 ```
 [root@localhost source]# ./waf configure build
 Setting top to                           : /root/winexe/source
@@ -142,11 +149,9 @@ Waf: Leaving directory `/root/winexe/source/build'
 
 정상적으로 빌드가 되어 이제 winexe 파일을 실행할 수 있게 되었다.
 
+단, winexe는 윈도우 예전 버전인 WindowsNT/2000/XP/2003 에서 사용이 가능하다고 되어있어 설치만 하고 실제로 활용은 못하였다.
 
-
-
-
-
+> https://www.aldeid.com/wiki/Winexe
 
 
 
