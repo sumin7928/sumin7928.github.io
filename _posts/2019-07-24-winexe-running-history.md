@@ -17,8 +17,11 @@ CentOS Linux release 7.6.1810 (Core)
 Linux localhost.localdomain 3.10.0-957.12.1.el7.x86_64 #1 SMP Mon Apr 29 14:59:59 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-리눅스에서 윈도우 서버에 원격 접속할 수 있는 프로그램으로는 rdesktop, remmina등이 있다. 하지만 리눅스가 GUI가 아니라 따로 시도해 보지는 않았고
-젠킨스를 이용해 스크립트 실행 목적으로 만들 예정이라 찾아보니 윈도우에서는 보통 psexec.exe 를 사용해서 윈도우 원격 제어 툴로 많이 사용되는 것으로 보인다.
+리눅스에서 윈도우 서버에 원격 접속할 수 있는 프로그램으로는 rdesktop, remmina등이 있다. 
+
+하지만 리눅스가 GUI가 아니라 따로 시도해 보지는 않았고 젠킨스를 이용해 스크립트 실행 목적으로 만들 예정이라
+
+찾아보니 윈도우에서는 보통 psexec.exe 를 사용해서 윈도우 원격 제어 툴로 많이 사용되는 것으로 보인다.
 
 psexec.exe 사용을 위해서는 리눅스에서 winexe를 사용해야 하고 관련 소스는 [공식 사이트](https://sourceforge.net/p/winexe/winexe-waf/ci/master/tree/)에 제공되어있다.
 
@@ -87,8 +90,9 @@ Cannot continue! Please either install Samba shared libraries and re-run waf, or
 (complete log in /root/winexe/source/build/config.log)
 ```
 
-위의 문제가 발생해서 관련 라이브러리들을 막 설치해보고 공식 문서를 보니 `git clone git://git.samba.org/samba.git samba` 로 Samba 소스도 가져와
---samba-dir 옵션으로 해당 path를 지정했는데도 안되었다.
+위의 문제가 발생해서 관련 라이브러리들을 막 설치해보고 공식 문서를 보니,
+
+`git clone git://git.samba.org/samba.git samba` 로 Samba 소스도 가져와 --samba-dir 옵션으로 해당 path를 지정했는데도 안되었다.
 
 ```console
 [root@localhost source]# ./waf --samba-dir=../../samba configure build
@@ -130,7 +134,9 @@ Cannot continue! Please either install Samba shared libraries and re-run waf, or
 (complete log in /root/winexe/source/build/config.log)
 ```
 
-하지만 또 다른 이슈.. 이번엔 cli-.. 관련 라이브러리가 없다고하네.. yum 으로 찾아봐도 없고 계속 검색해도 없었지만 또 누군가가 우릴 위해서 삽질한 경험을 공유해주었다.
+하지만 또 다른 이슈.. 이번엔 cli-.. 관련 라이브러리가 없다고하네.. 
+
+yum 으로 찾아봐도 없고 계속 검색해도 없었지만 또 누군가가 우릴 위해서 삽질한 경험을 공유해주었다.
 
 ```console
 [root@localhost source]# ln -s /usr/lib64/samba/libgenrand-samba4.so /usr/lib64/libgenrand-samba4.so
