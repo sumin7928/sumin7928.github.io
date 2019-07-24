@@ -29,10 +29,12 @@ psexec.exe 사용을 위해서는 리눅스에서 winexe를 사용해야 하고 
 
 설치는 [참고 사이트](https://www.kickass.se/?p=189)를 통해서 진행하였으며 따라서 관련 설치 패키지도 공식 문서와는 조금 다르다. 
 
-1. winexe 소스 가져옴
+#### 1. winexe 소스 가져옴
+
 해당 사이트에서 제공되는 파일을 다운받던지 `git clone http://git.code.sf.net/p/winexe/winexe-waf winexe` 를 이용해서 전체 소스를 가져오면 된다.
 
-2. 관련 패키지를 설치
+#### 2. 관련 패키지를 설치
+
 ```console
 yum install epel-release
 yum update -y
@@ -66,7 +68,8 @@ openldap-devel \
 samba-devel \
 ```
 
-3. 컴파일 및 빌드 진행
+#### 3.컴파일 및 빌드 진행
+
 받은 winexe 폴더의 source 폴더에서 진행
 ```console
 [root@localhost source]# ./waf configure build
