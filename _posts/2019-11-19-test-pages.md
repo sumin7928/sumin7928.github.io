@@ -1,14 +1,14 @@
 ---
 
   layout: post
-  title: Å×½ºÆ® ÆäÀÌÁö
+  title: í…ŒìŠ¤íŠ¸ íŽ˜ì´ì§€
   date: 2019-11-19 16:00:00 +0900
-  tags: 
-  description: Å×½ºÆ® ÆäÀÌÁö È£Ãâ. 
+  tags: windows
+  description: í…ŒìŠ¤íŠ¸ íŽ˜ì´ì§€ í˜¸ì¶œ. 
 
 ---
 
 
-## ÀÓ½Ã Å×½ºÆ® ÆäÀÌÁö
+## ìž„ì‹œ í…ŒìŠ¤íŠ¸ íŽ˜ì´ì§€
 
-¤»¤»¤»
+ã…‹ã…‹ã…‹
