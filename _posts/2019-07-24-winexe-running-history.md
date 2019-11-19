@@ -2,7 +2,7 @@
 
   layout: post
   title: CentOS7 에서 winexe 설치 과정 히스토리
-  date: 2018-07-24 16:00:00 +0900
+  date: 2019-07-24 16:00:00 +0900
   tags: centos windows
   description: 시간 흐름에 따른 이슈 중심으로 히스토리를 만들어 보았다. 
 

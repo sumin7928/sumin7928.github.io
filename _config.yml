@@ -27,7 +27,7 @@ linkedin_username:  sumin7928
 repository: sumin7928/sumin7928.github.io
 permalink: /:year-:month-:day-:title
 google_analytics: UA-144598035-1
-logo: "http://www.natalyakosenko.com/assets/logo.png"
+#logo: ""
 
 disqus:
     shortname: sumin7928
